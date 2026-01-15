@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Read | Museum Blog</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #fcfcfc;
+        color: #333;
+        line-height: 1.8;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* Header */
+      header {
+        padding: 1.5rem 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(12px);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        border-bottom: 1px solid #eee;
+      }
+
+      .logo {
+        font-family: "Playfair Display", serif;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+      }
+
+      nav ul li a {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #777;
+      }
+
+      nav ul li a:hover {
+        color: #000;
+      }
+
+      /* Blog Header */
+      .blog-header {
+        padding: 5rem 10% 3rem;
+        text-align: center;
+      }
+
+      .blog-header h1 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2.5rem, 5vw, 3.5rem);
+        margin-bottom: 1rem;
+      }
+
+      .blog-header p {
+        color: #777;
+        max-width: 600px;
+        margin: auto;
+        font-size: 1rem;
+      }
+
+      /* Blog Container */
+      .container {
+        padding: 3rem 10% 6rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2.5rem;
+      }
+
+      .post {
+        background: #fff;
+        padding: 2.5rem;
+        border-radius: 16px;
+        border: 1px solid #eee;
+        transition: all 0.3s ease;
+      }
+
+      .post:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+      }
+
+      .post small {
+        color: #999;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      .post h2 {
+        font-family: "Playfair Display", serif;
+        margin: 0.8rem 0 1rem;
+        font-size: 1.5rem;
+      }
+
+      .post p {
+        color: #666;
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .read-more {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #111;
+        font-weight: 500;
+      }
+
+      .read-more:hover {
+        text-decoration: underline;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 3rem 10%;
+        font-size: 0.75rem;
+        color: #aaa;
+        border-top: 1px solid #eee;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        header {
+          padding: 1.2rem 6%;
+        }
+
+        .blog-header,
+        .container {
+          padding-left: 6%;
+          padding-right: 6%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">MUSEUM.</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="read.html">Read</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="blog-header">
+      <h1>Technology Journal</h1>
+      <p>
+        Catatan kurasi tentang teknologi modern, pemikiran digital, dan
+        perkembangan masa depan dalam sudut pandang sederhana.
+      </p>
+    </section>
+
+    <section class="container">
+      <article class="post">
+        <small>Technology • 2026</small>
+        <h2>Mengenal Perkembangan Teknologi Digital</h2>
+        <p>
+          Teknologi digital berkembang sangat pesat dan mempengaruhi hampir
+          seluruh aspek kehidupan manusia, mulai dari komunikasi hingga
+          pendidikan.
+        </p>
+        <a href="#" class="read-more">Baca Selengkapnya</a>
+      </article>
+
+      <article class="post">
+        <small>Artificial Intelligence</small>
+        <h2>Peran AI dalam Kehidupan Sehari-hari</h2>
+        <p>
+          Kecerdasan buatan kini hadir dalam berbagai bentuk, seperti asisten
+          virtual, sistem rekomendasi, hingga otomatisasi pekerjaan.
+        </p>
+        <a href="#" class="read-more">Baca Selengkapnya</a>
+      </article>
+
+      <article class="post">
+        <small>Web Development</small>
+        <h2>Mengapa Desain Web Minimalis Semakin Populer</h2>
+        <p>
+          Desain minimalis menekankan kesederhanaan, keterbacaan, dan pengalaman
+          pengguna yang lebih fokus.
+        </p>
+        <a href="#" class="read-more">Baca Selengkapnya</a>
+      </article>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Museum Studio. Semua tulisan dikurasi dengan elegan.</p>
+    </footer>
+  </body>
+</html>

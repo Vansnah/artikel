@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUSEUM | Portfolio Concept</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #fcfcfc;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* Header */
+      header {
+        padding: 1.5rem 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(12px);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        border-bottom: 1px solid #eee;
+      }
+
+      .logo {
+        font-family: "Playfair Display", serif;
+        font-size: 1.6rem;
+        letter-spacing: 3px;
+        color: #111;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 2.5rem;
+      }
+
+      nav ul li a {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #777;
+        transition: color 0.3s ease;
+      }
+
+      nav ul li a:hover {
+        color: #000;
+      }
+
+      /* Hero */
+      .hero {
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 10%;
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.95),
+          rgba(245, 245, 245, 0.95)
+        );
+      }
+
+      .hero h1 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(3rem, 6vw, 4.5rem);
+        margin-bottom: 1rem;
+        color: #111;
+        animation: fadeUp 1s ease forwards;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+        color: #777;
+        max-width: 600px;
+        margin-bottom: 2.5rem;
+        animation: fadeUp 1.3s ease forwards;
+      }
+
+      .btn {
+        padding: 1rem 3rem;
+        background-color: #111;
+        color: #fff;
+        border-radius: 50px;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        animation: fadeUp 1.6s ease forwards;
+      }
+
+      .btn:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        background-color: #000;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 3rem 10%;
+        font-size: 0.75rem;
+        color: #aaa;
+        border-top: 1px solid #eee;
+      }
+
+      /* Animasi */
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        header {
+          padding: 1.2rem 6%;
+        }
+
+        nav ul {
+          gap: 1.5rem;
+        }
+
+        .hero {
+          padding: 0 6%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">MUSEUM.</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Read</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Welcome</h1>
+        <p>
+          Ruang kurasi digital yang membahas teknologi, kreativitas, dan ide
+          modern dalam balutan desain yang elegan.
+        </p>
+        <a href="#" class="btn">Masuk & Baca Teknologi</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Museum Studio. Dirancang dengan penuh ketelitian.</p>
+    </footer>
+  </body>
+</html>
